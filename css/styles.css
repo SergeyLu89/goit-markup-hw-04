@@ -73,6 +73,18 @@ button {
   margin-left: 315px;
   margin-right: 315px;
 }
+
+.secondary-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.1;
+  text-transform: capitalize;
+  color: var(--secondary-color);
+  text-align: center;
+  letter-spacing: var(--main-letter-spacing);
+  margin-bottom: 72px;
+}
+
 .subtitle {
   font-weight: 500;
   font-size: 20px;
@@ -82,16 +94,6 @@ button {
   margin-bottom: 8px;
 }
 
-.secondary-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.11;
-  text-transform: capitalize;
-  color: var(--secondary-color);
-  text-align: center;
-  letter-spacing: var(--main-letter-spacing);
-  margin-bottom: 72px;
-}
 .container {
   width: 1158px;
   margin-left: auto;
@@ -124,6 +126,8 @@ button {
   padding-top: 24px;
   padding-bottom: 24px;
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .logo {
   font-family: 'Raleway', sans-serif;
@@ -184,6 +188,9 @@ button {
 .hero {
   background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
     url(../images/hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   max-width: 1440px;
   padding-top: 188px;
   padding-bottom: 188px;
@@ -273,7 +280,7 @@ button {
 .team-social-icon-list {
   display: flex;
   justify-content: center;
-  column-gap: 24px;
+  gap: 24px;
 }
 .team-item-description {
   margin-bottom: 8px;
@@ -300,7 +307,7 @@ button {
 /* ----------CUSTOMERS---------- */
 .customers-list {
   display: flex;
-  column-gap: 24px;
+  gap: 24px;
 }
 .customers-list-item {
   display: flex;
@@ -374,11 +381,18 @@ button {
   border-top: none;
 }
 
+.project-card-link {
+  display: block;
+}
+.project-card-link:hover,
+.project-card-link:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
 .project-card-link:hover .projekt-cards-text-content,
 .project-card-link:focus .projekt-cards-text-content {
   border: #f4f4fd;
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
-    0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 /* ----------FOOTER---------- */
@@ -404,6 +418,7 @@ button {
 
 .footer-contant-box {
   display: flex;
+  align-items: baseline;
 }
 .footer-conten-left-side {
   margin-right: 120px;
@@ -415,7 +430,7 @@ button {
 }
 .footer-social-list {
   display: flex;
-  column-gap: 16px;
+  gap: 16px;
 }
 
 .footer-social-list-item .social-icon-link:hover,
